@@ -1,0 +1,182 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: 18.651099
+  longitude: 73.738593
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 548
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Asia/Kolkata
+
+# Enables the frontend
+frontend:
+
+http:
+  # Uncomment this to add a password (recommended!)
+  api_password: !secret api_password
+  # Uncomment this if you are using SSL or running in Docker etc
+  # base_url: example.duckdns.org:8123
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time.
+history:
+
+# View all events in a logbook
+logbook:
+
+# Track the sun
+sun:
+
+# Weather Prediction
+sensor:
+  platform: yr
+
+# Text to speech
+tts:
+  platform: google
+
+
+mqtt:
+  broker: 192.168.1.103
+  port: 1883
+  client_id: home-assistant-1
+  username: pi
+  password: raspberry
+
+light:
+  platform: mqtt
+  name: "Living Room POP LEDs"
+  command_topic: "sshelar/mqttstrip/setpower"
+  state_topic: "sshelar/mqttstrip/setpowerpub"
+  rgb_state_topic: "sshelar/mqttstrip/setcolorpub"
+  rgb_command_topic: "sshelar/mqttstrip/setcolor"
+  brightness_state_topic: "sshelar/mqttstrip/setbrightnesspub"
+  brightness_command_topic: "sshelar/mqttstrip/setbrightness"
+  optimistic: false
+
+input_select:
+  porch_led_effect:
+    name: LED Effect
+    options:
+     - "BPM"
+     - "Candy Cane"
+     - "Confetti"
+     - "Cyclon Rainbow"
+     - "Dots"
+     - "Fire"
+     - "Glitter"
+     - "Juggle"
+     - "Lightning"
+     - "Noise"
+     - "Police All"
+     - "Police One"
+     - "Rainbow"
+     - "Rainbow with Glitter"
+     - "Ripple"
+     - "Sinelon"
+     - "Solid"
+     - "Twinkle"
+    initial: "Solid"
+
+input_slider:
+  porch_animation_speed:
+    name: Animation Speed
+    initial: 150
+    min: 1
+    max: 150
+    step: 10
+
+automation: 
+  - alias: "Input Effect"
+    initial_state: True
+    hide_entity: False
+    trigger:
+      - platform: state
+        entity_id: input_select.porch_led_effect
+    action:
+      - service: mqtt.publish
+        data_template:
+          topic: "sshelar/mqttstrip/seteffect"
+          payload: '{{ trigger.to_state.state | string }}'
+
+  - alias: "LED Animation Speed"
+    initial_state: True
+    hide_entity: False
+    trigger:
+      - platform: state
+        entity_id: input_slider.porch_animation_speed
+    action:
+      - service: mqtt.publish
+        data_template:
+          topic: "sshelar/mqttstrip/setanimationspeed"
+          payload: '{{ trigger.to_state.state | int }}'
+
+
+light led1:
+  platform: mqtt
+  name: "LED 1"
+  command_topic: "living/light/led1"
+  state_topic: "living/light/led1pub"
+  optimistic: false
+
+light led2:
+  platform: mqtt
+  name: "LED 2"
+  command_topic: "living/light/led2"
+  state_topic: "living/light/led2pub"
+  optimistic: false
+
+light led3:
+  platform: mqtt
+  name: "LED 3"
+  command_topic: "living/light/led3"
+  state_topic: "living/light/led3pub"
+  optimistic: false
+
+light led4:
+  platform: mqtt
+  name: "LED 4"
+  command_topic: "living/light/led4"
+  state_topic: "living/light/led4pub"
+  optimistic: false
+
+light led5:
+  platform: mqtt
+  name: "LED 5"
+  command_topic: "living/light/led5"
+  state_topic: "living/light/led5pub"
+  optimistic: false
+
+light led7:
+  platform: mqtt
+  name: "LED 7"
+  command_topic: "living/light/led7"
+  state_topic: "living/light/led7pub"
+  optimistic: false
+
+light led8:
+  platform: mqtt
+  name: "LED 8"
+  command_topic: "living/light/led8"
+  state_topic: "living/light/led8pub"
+  optimistic: false
+
+group:
+  environment:
+    - sensor.yr_symbol
+    - sun.sun
+  living_room:
+    name : Living Room
+    entities: 
+      - light led7
