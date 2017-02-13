@@ -158,7 +158,7 @@ light led5:
   state_topic: "living/light/led5pub"
   optimistic: false
 
-light led7:
+light.led7:
   platform: mqtt
   name: "LED 7"
   command_topic: "living/light/led7"
@@ -176,7 +176,3 @@ group:
   environment:
     - sensor.yr_symbol
     - sun.sun
-  living_room:
-    name : Living Room
-    entities: 
-      - light led7
