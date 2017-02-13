@@ -2,8 +2,8 @@ homeassistant:
   # Name of the location where Home Assistant is running
   name: Home
   # Location required to calculate the time the sun rises and sets
-  latitude: 18.651099
-  longitude: 73.738593
+  latitude: !secret ravet_latitude
+  longitude: !secret ravet_longitude
   # Impacts weather/sunrise data (altitude above sea level in meters)
   elevation: 548
   # metric for Metric, imperial for Imperial
@@ -50,9 +50,9 @@ tts:
 mqtt:
   broker: 192.168.1.103
   port: 1883
-  client_id: home-assistant-1
-  username: pi
-  password: raspberry
+  client_id: !secret mqqt_client_id
+  username: !secret mqtt_username
+  password: !secret mqtt_password
 
 light:
   platform: mqtt
@@ -121,56 +121,6 @@ automation:
         data_template:
           topic: "sshelar/mqttstrip/setanimationspeed"
           payload: '{{ trigger.to_state.state | int }}'
-
-
-light led1:
-  platform: mqtt
-  name: "LED 1"
-  command_topic: "living/light/led1"
-  state_topic: "living/light/led1pub"
-  optimistic: false
-
-light led2:
-  platform: mqtt
-  name: "LED 2"
-  command_topic: "living/light/led2"
-  state_topic: "living/light/led2pub"
-  optimistic: false
-
-light led3:
-  platform: mqtt
-  name: "LED 3"
-  command_topic: "living/light/led3"
-  state_topic: "living/light/led3pub"
-  optimistic: false
-
-light led4:
-  platform: mqtt
-  name: "LED 4"
-  command_topic: "living/light/led4"
-  state_topic: "living/light/led4pub"
-  optimistic: false
-
-light led5:
-  platform: mqtt
-  name: "LED 5"
-  command_topic: "living/light/led5"
-  state_topic: "living/light/led5pub"
-  optimistic: false
-
-light.led7:
-  platform: mqtt
-  name: "LED 7"
-  command_topic: "living/light/led7"
-  state_topic: "living/light/led7pub"
-  optimistic: false
-
-light led8:
-  platform: mqtt
-  name: "LED 8"
-  command_topic: "living/light/led8"
-  state_topic: "living/light/led8pub"
-  optimistic: false
 
 group:
   environment:
