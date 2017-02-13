@@ -10,6 +10,7 @@ homeassistant:
   unit_system: metric
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: Asia/Kolkata
+  customize: !include misc/customize.yaml
 
 # Enables the frontend
 frontend:
@@ -17,6 +18,10 @@ frontend:
 http:
   # Uncomment this to add a password (recommended!)
   api_password: !secret api_password
+  cors_allowed_origins:
+    - https://google.com
+    - https://home-assistant.io
+  login_attempts_threshold: 5
   # Uncomment this if you are using SSL or running in Docker etc
   # base_url: example.duckdns.org:8123
 
@@ -46,83 +51,16 @@ sensor:
 tts:
   platform: google
 
-
 mqtt:
   broker: 192.168.1.103
   port: 1883
-  client_id: !secret mqqt_client_id
+  client_id: home-assistant-1
   username: !secret mqtt_username
   password: !secret mqtt_password
 
-light:
-  platform: mqtt
-  name: "Living Room POP LEDs"
-  command_topic: "sshelar/mqttstrip/setpower"
-  state_topic: "sshelar/mqttstrip/setpowerpub"
-  rgb_state_topic: "sshelar/mqttstrip/setcolorpub"
-  rgb_command_topic: "sshelar/mqttstrip/setcolor"
-  brightness_state_topic: "sshelar/mqttstrip/setbrightnesspub"
-  brightness_command_topic: "sshelar/mqttstrip/setbrightness"
-  optimistic: false
-
-input_select:
-  porch_led_effect:
-    name: LED Effect
-    options:
-     - "BPM"
-     - "Candy Cane"
-     - "Confetti"
-     - "Cyclon Rainbow"
-     - "Dots"
-     - "Fire"
-     - "Glitter"
-     - "Juggle"
-     - "Lightning"
-     - "Noise"
-     - "Police All"
-     - "Police One"
-     - "Rainbow"
-     - "Rainbow with Glitter"
-     - "Ripple"
-     - "Sinelon"
-     - "Solid"
-     - "Twinkle"
-    initial: "Solid"
-
-input_slider:
-  porch_animation_speed:
-    name: Animation Speed
-    initial: 150
-    min: 1
-    max: 150
-    step: 10
-
-automation: 
-  - alias: "Input Effect"
-    initial_state: True
-    hide_entity: False
-    trigger:
-      - platform: state
-        entity_id: input_select.porch_led_effect
-    action:
-      - service: mqtt.publish
-        data_template:
-          topic: "sshelar/mqttstrip/seteffect"
-          payload: '{{ trigger.to_state.state | string }}'
-
-  - alias: "LED Animation Speed"
-    initial_state: True
-    hide_entity: False
-    trigger:
-      - platform: state
-        entity_id: input_slider.porch_animation_speed
-    action:
-      - service: mqtt.publish
-        data_template:
-          topic: "sshelar/mqttstrip/setanimationspeed"
-          payload: '{{ trigger.to_state.state | int }}'
-
-group:
-  environment:
-    - sensor.yr_symbol
-    - sun.sun
+input_boolean: !include misc/input_boolean.yaml
+input_select: !include misc/input_select.yaml
+input_slider: !include misc/input_slider.yaml
+light: !include_dir_list lights/
+# switch: !include_dir_list switches/
+# group: !include_dir_merge_named groups/

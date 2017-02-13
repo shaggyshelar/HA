@@ -1,0 +1,42 @@
+##LIGHTS##
+    switch.megadesk_leds:
+      friendly_name: Megadesk LEDs
+      icon: mdi:led-outline
+    switch.fan:
+      friendly_name: Megadesk Fan
+      icon: mdi:fan
+    switch.monitor_light:
+      friendly_name: Monitor Light
+      icon: mdi:led-outline
+    switch.fishstick:
+      friendly_name: FishStick
+      icon: mdi:speaker
+
+    switch.wake_on_lan:
+      friendly_name: PC
+      icon: mdi:power
+
+##Sensors##
+    sensor.ble_black_tag:
+      friendly_name: "Black Tag"
+      icon: mdi:tag
+    sensor.ble_clear_tag:
+      friendly_name: "Clear Tag"
+      icon: mdi:tag
+    sensor.ble_white_tag:
+      friendly_name: "White Tag"
+      icon: mdi:tag
+
+#######LIGHTS##
+    light.porch_leds:
+      friendly_name: "LED Strip"
+      icon: mdi:led-outline
+    input_select.porch_led_effect:
+      friendly_name: "Effect Selector"
+      icon: mdi:selection
+    input_slider.porch_animation_speed:
+      friendly_name: "Animation Speed"
+      icon: mdi:animation
+    switch.homeseer_unknown_type4447_id3033_switch_3_0:
+      friendly_name: "Vanity Light"
+      icon: mdi:led-outline
