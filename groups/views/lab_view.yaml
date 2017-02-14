@@ -1,0 +1,8 @@
+  lab_view:
+    name: Lab
+    view: yes
+    entities:
+      - group.lab_lights_card
+      - group.lab_switches_card
+      - group.octoprint_status_card
+      - group.fibaro_multisensor_card
