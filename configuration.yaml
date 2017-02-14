@@ -64,3 +64,5 @@ input_slider: !include misc/input_slider.yaml
 light: !include_dir_list lights/
 # switch: !include_dir_list switches/
 group: !include_dir_merge_named groups/
+weather: !include_dir_list weather/
+zone: !include_dir_list zones/
