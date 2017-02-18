@@ -2,3 +2,11 @@ platform: openweathermap
 api_key: !secret openweather_api_key
 latitude: !secret ravet_latitude
 longitude: !secret ravet_longitude
+monitored_conditions:
+  - weather
+  - temperature
+  - wind_speed
+  - humidity
+  - pressure
+  - clouds
+  - rain

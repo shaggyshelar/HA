@@ -3,5 +3,7 @@ tts
 .HA_VERSION
 secrets.yaml
 home-assistant.log
+fullchain.pem
+privkey.pem
 home-assistant_v2.db
 .uuid

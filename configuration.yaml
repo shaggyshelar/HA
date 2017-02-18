@@ -18,6 +18,8 @@ frontend:
 http:
   # Uncomment this to add a password (recommended!)
   api_password: !secret api_password
+  ssl_certificate: /home/homeassistant/.homeassistant/fullchain.pem
+  ssl_key: /home/homeassistant/.homeassistant/privkey.pem
   cors_allowed_origins:
     - https://google.com
     - https://home-assistant.io
@@ -44,24 +46,41 @@ logbook:
 sun:
 
 # Weather Prediction
-sensor:
-  platform: yr
+# sensor:
+#   platform: yr
 
 # Text to speech
 tts:
   platform: google
 
+recorder:
+  purge_days: 7
+
 mqtt:
-  broker: 192.168.1.103
-  port: 1883
+  broker: !secret cloud_mqtt_broker
+  port: !secret cloud_mqtt_port
   client_id: home-assistant-1
-  username: !secret mqtt_username
-  password: !secret mqtt_password
+  username: !secret cloud_mqtt_username
+  password: !secret cloud_mqtt_password
+  # broker: 192.168.1.103
+  # port: 1883
+  # client_id: home-assistant-1
+  # username: !secret mqtt_username
+  # password: !secret mqtt_password
+
+# notify:
+#   - name: push_bullet
+#     platform: pushbullet
+#     api_key: !secret pushbullet_api
+
+device_tracker:
+  - platform: owntracks
 
 input_boolean: !include misc/input_boolean.yaml
 input_select: !include misc/input_select.yaml
 input_slider: !include misc/input_slider.yaml
 light: !include_dir_list lights/
+sensor: !include_dir_list sensors/
 shell_command: !include misc/shell_commands.yaml
 switch: !include_dir_list switches/
 script: !include_dir_merge_named scripts/
