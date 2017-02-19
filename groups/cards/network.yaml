@@ -1,7 +1,10 @@
-Network:
+System:
   entities:
     - sensor.since_last_boot_templated
     - sensor.disk_use_
+    - sensor.cpu
+    - sensor.cpu_use
+    - sensor.ram_use
+    - sensor.ram_free
     - sensor.speedtest_download
     - sensor.speedtest_upload
-    - sensor.sleep_number_bed

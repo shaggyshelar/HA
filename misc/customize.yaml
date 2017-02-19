@@ -46,11 +46,10 @@
       emulated_hue: False
       hidden: False
       icon: mdi:clock-start
-    sensor.sleep_number_bed:
-      friendly_name: 'Sleep Number Bed'
-      emulated_hue: False
-      hidden: False
-      icon: mdi:hotel
+    sensor.cpu_use:
+      friendly_name: CPU Usage
+    sensor.ram_use:
+      friendly_name: RAM Usage
     sensor.speedtest_download:
       friendly_name: 'Download'
       emulated_hue: False
