@@ -1,0 +1,5 @@
+name: Akurdi Home
+latitude: !secret akurdi_latitude
+longitude: !secret akurdi_longitude
+radius: 150
+icon: mdi:account-multiple
