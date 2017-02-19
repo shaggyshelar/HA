@@ -84,3 +84,9 @@
     switch.homeseer_unknown_type4447_id3033_switch_3_0:
       friendly_name: "Vanity Light"
       icon: mdi:led-outline
+
+###### Groups ##########
+    group.home_modes:
+      friendly_name: 'Home Modes'
+      emulated_hue: False
+      hidden: False
