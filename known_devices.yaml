@@ -1,0 +1,8 @@
+
+sagarphone_asus:
+  hide_if_away: false
+  mac:
+  name: SagarPhone
+  picture:
+  track: true
+  vendor:

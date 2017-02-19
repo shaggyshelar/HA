@@ -1,0 +1,7 @@
+Network:
+  entities:
+    - sensor.since_last_boot_templated
+    - sensor.disk_use_
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+    - sensor.sleep_number_bed

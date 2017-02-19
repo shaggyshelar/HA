@@ -1,0 +1,7 @@
+  family_locations_card:
+    name: Family Locations
+    entities:
+      - device_tracker.sagar
+      - device_tracker.priyanka
+      - sensor.sagar_phone_battery
+      - device_tracker.sagarphone_asus

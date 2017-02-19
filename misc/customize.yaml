@@ -26,6 +26,50 @@
     sensor.ble_white_tag:
       friendly_name: "White Tag"
       icon: mdi:tag
+    sensor.disk_use_:
+      friendly_name: 'Disk Usage'
+      emulated_hue: False
+      hidden: False
+      icon: mdi:harddisk
+    sensor.garadget_large_wifi_signal_strength:
+      friendly_name: 'Wifi Strength'
+      emulated_hue: False
+      hidden: False
+      icon: mdi:wifi
+    sensor.since_last_boot:
+      friendly_name: 'Since Last Boot'
+      emulated_hue: False
+      hidden: True
+      icon: mdi:clock
+    sensor.since_last_boot_templated:
+      friendly_name: 'Homeassistant Uptime'
+      emulated_hue: False
+      hidden: False
+      icon: mdi:clock-start
+    sensor.sleep_number_bed:
+      friendly_name: 'Sleep Number Bed'
+      emulated_hue: False
+      hidden: False
+      icon: mdi:hotel
+    sensor.speedtest_download:
+      friendly_name: 'Download'
+      emulated_hue: False
+      hidden: False
+      icon: mdi:speedometer
+    sensor.speedtest_upload:
+      friendly_name: 'Upload'
+      emulated_hue: False
+      hidden: False
+      icon: mdi:speedometer
+    device_tracker.priyanka:
+      friendly_name: 'Priyanka'
+      emulated_hue: False
+      hidden: False
+    device_tracker.sagar:
+      friendly_name: 'Sagar'
+      emulated_hue: False
+      hidden: False
+
 
 #######LIGHTS##
     light.porch_leds:
