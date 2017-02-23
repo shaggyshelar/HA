@@ -1,5 +1,10 @@
   living_room_lights_card:
     name: Living Room
     entities:
-      - light.switch
-      - light.wall
+      - light.living_POP_1
+      - light.living_POP_2
+      - light.living_POP_3
+      - light.living_POP_4
+      - light.living_POP_moodlight
+      - light.living_TV_backlight
+      - light.living_door_entry

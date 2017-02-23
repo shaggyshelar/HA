@@ -1,0 +1,9 @@
+  bedroom_lights_card:
+    name: Master Bedroom
+    entities:
+      - light.master_bedroom_POP_1
+      - light.master_bedroom_POP_2
+      - light.master_bedroom_POP_3
+      - light.master_bedroom_POP_4
+      - light.master_bedroom_POP_moodlight
+      - light.master_bedroom_TV_backlight

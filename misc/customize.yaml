@@ -137,6 +137,93 @@
     switch.homeseer_unknown_type4447_id3033_switch_3_0:
       friendly_name: "Vanity Light"
       icon: mdi:led-outline
+    
+    ######## Living Room #######
+    light.living_POP_1:
+      friendly_name: 'POP 1'
+      emulated_hue: False
+    light.living_POP_2:
+      friendly_name: 'POP 2'
+      emulated_hue: False
+    light.living_POP_3:
+      friendly_name: 'POP 3'
+      emulated_hue: False
+    light.living_POP_4:
+      friendly_name: 'POP 4'
+      emulated_hue: False
+    light.living_POP_moodlight:
+      friendly_name: 'POP Mood Light'
+      emulated_hue: False
+    light.living_TV_backlight:
+      friendly_name: 'TV Backlight'
+      emulated_hue: False
+    light.living_door_entry:
+      friendly_name: 'Door Entry'
+      emulated_hue: False
+
+    ######## Kitchen #######
+    light.kitchen_POP_1:
+      friendly_name: 'POP 1'
+      emulated_hue: False
+    light.kitchen_POP_2:
+      friendly_name: 'POP 2'
+      emulated_hue: False
+    light.kitchen_POP_3:
+      friendly_name: 'POP 3'
+      emulated_hue: False
+    light.kitchen_POP_4:
+      friendly_name: 'POP 4'
+      emulated_hue: False
+    light.kitchen_ledstrip1:
+      friendly_name: 'LED Strip'
+      emulated_hue: False
+    light.kitchen_dry_balcony:
+      friendly_name: 'Dry Balcony'
+      emulated_hue: False
+
+    ######## Bed Room #######
+    light.bedroom_POP_1:
+      friendly_name: 'POP 1'
+      emulated_hue: False
+    light.bedroom_POP_2:
+      friendly_name: 'POP 2'
+      emulated_hue: False
+    light.bedroom_POP_3:
+      friendly_name: 'POP 3'
+      emulated_hue: False
+    light.bedroom_POP_4:
+      friendly_name: 'POP 4'
+      emulated_hue: False
+    light.bedroom_POP_moodlight:
+      friendly_name: 'POP Mood Light'
+      emulated_hue: False
+    light.bedroom_TV_backlight:
+      friendly_name: 'TV Backlight'
+      emulated_hue: False
+    light.bedroom_gallary:
+      friendly_name: 'Gallary'
+      emulated_hue: False
+
+    ######## Master Bed Room #######
+    light.master_bedroom_POP_1:
+      friendly_name: 'POP 1'
+      emulated_hue: False
+    light.master_bedroom_POP_2:
+      friendly_name: 'POP 2'
+      emulated_hue: False
+    light.master_bedroom_POP_3:
+      friendly_name: 'POP 3'
+      emulated_hue: False
+    light.master_bedroom_POP_4:
+      friendly_name: 'POP 4'
+      emulated_hue: False
+    light.master_bedroom_POP_moodlight:
+      friendly_name: 'POP Mood Light'
+      emulated_hue: False
+    light.master_bedroom_TV_backlight:
+      friendly_name: 'TV Backlight'
+      emulated_hue: False
+
 
 ###### Groups ##########
     group.home_modes:
