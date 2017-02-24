@@ -8,6 +8,12 @@
       - input_boolean.living_door_entry
       - input_boolean.living_fan1
       - input_boolean.living_fan2
+      - input_boolean.living_tv
+      - input_boolean.living_xbox
+      - input_boolean.living_audioplayer
+      - input_boolean.living_mibox
+      - input_boolean.living_lan_switch
+      - input_boolean.living_settop_box
       - light.Living_Moodlight
       - input_select.living_moodlight_effect
       - input_slider.living_animation_speed

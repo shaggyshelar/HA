@@ -7,6 +7,7 @@
       - input_boolean.master_bedroom_pop4
       - input_boolean.master_bedroom_fan1
       - input_boolean.master_bedroom_fan2
+      - input_boolean.master_bedroom_tv
       - light.Master_Bedroom_Moodlight
       - input_select.master_bedroom_moodlight_effect
       - input_slider.master_bedroom_animation_speed
