@@ -138,34 +138,6 @@
       friendly_name: "Vanity Light"
       icon: mdi:led-outline
 
-    ######## Living Room #######
-    light.living_POP_1:
-      friendly_name: 'POP 1'
-      emulated_hue: False
-    light.living_POP_2:
-      friendly_name: 'POP 2'
-      emulated_hue: False
-    light.living_POP_3:
-      friendly_name: 'POP 3'
-      emulated_hue: False
-    light.living_POP_4:
-      friendly_name: 'POP 4'
-      emulated_hue: False
-    light.living_POP_moodlight:
-      friendly_name: 'POP Mood Light'
-      icon: mdi:led-outline
-    light.living_TV_backlight:
-      friendly_name: 'TV Backlight'
-      emulated_hue: False
-    light.living_door_entry:
-      friendly_name: 'Door Entry'
-      emulated_hue: False
-    switch.living_fan1:
-      friendly_name: Fan 1
-      icon: mdi:fan
-    switch.living_fan2:
-      friendly_name: Fan 2
-      icon: mdi:fan
 
     ######## Kitchen #######
     light.kitchen_POP_1:
