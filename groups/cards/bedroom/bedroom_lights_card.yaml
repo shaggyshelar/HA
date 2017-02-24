@@ -1,14 +1,12 @@
   bedroom_lights_card:
     name: Bedroom
     entities:
-      - light.bedroom_POP_1
-      - light.bedroom_POP_2
-      - light.bedroom_POP_3
-      - light.bedroom_POP_4
-      - light.bedroom_TV_backlight
-      - light.bedroom_gallary
-      - switch.bedroom_fan1
-      - switch.bedroom_fan2
+      - input_boolean.bedroom_pop1
+      - input_boolean.bedroom_pop2
+      - input_boolean.bedroom_pop3
+      - input_boolean.bedroom_pop4
+      - input_boolean.bedroom_fan1
+      - input_boolean.bedroom_fan2
       - light.Bedroom_Moodlight
       - input_select.bedroom_moodlight_effect
       - input_slider.bedroom_animation_speed

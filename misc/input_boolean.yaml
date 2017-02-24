@@ -52,3 +52,79 @@ living_fan2:
   name: Fan 2
   icon: mdi:fan
   initial: off
+
+######## Kitchen #######
+kitchen_pop1:
+  name: 'POP 1'
+  icon: mdi:lightbulb
+  initial: off
+kitchen_pop2:
+  name: 'POP 2'
+  icon: mdi:lightbulb
+  initial: off
+kitchen_pop3:
+  name: 'POP 3'
+  icon: mdi:lightbulb
+  initial: off
+kitchen_pop4:
+  name: 'POP 4'
+  icon: mdi:lightbulb
+  initial: off
+kitchen_fan1:
+  name: Fan 1
+  icon: mdi:fan
+  initial: off
+kitchen_fan2:
+  name: Fan 2
+  icon: mdi:fan
+  initial: off
+
+######## Bed Room #######
+bedroom_pop1:
+  name: 'POP 1'
+  icon: mdi:lightbulb
+  initial: off
+bedroom_pop2:
+  name: 'POP 2'
+  icon: mdi:lightbulb
+  initial: off
+bedroom_pop3:
+  name: 'POP 3'
+  icon: mdi:lightbulb
+  initial: off
+bedroom_pop4:
+  name: 'POP 4'
+  icon: mdi:lightbulb
+  initial: off
+bedroom_fan1:
+  name: Fan 1
+  icon: mdi:fan
+  initial: off
+bedroom_fan2:
+  name: Fan 2
+  icon: mdi:fan
+  initial: off
+
+######## Master Bed Room #######
+master_bedroom_pop1:
+  name: 'POP 1'
+  icon: mdi:lightbulb
+  initial: off
+master_bedroom_pop2:
+  name: 'POP 2'
+  icon: mdi:lightbulb
+  initial: off
+master_bedroom_pop3:
+  name: 'POP 3'
+  icon: mdi:lightbulb
+  initial: off
+master_bedroom_pop4:
+  name: 'POP 4'
+  icon: mdi:lightbulb
+  initial: off
+master_bedroom_fan1:
+  name: Fan 1
+  icon: mdi:fan
+master_bedroom_fan2:
+  name: Fan 2
+  icon: mdi:fan

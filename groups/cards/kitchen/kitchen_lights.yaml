@@ -1,14 +1,12 @@
   kitchen_lights_card:
     name: Kitchen
     entities:
-      - light.kitchen_POP_1
-      - light.kitchen_POP_2
-      - light.kitchen_POP_3
-      - light.kitchen_POP_4
-      - light.kitchen_ledstrip1
-      - light.kitchen_fan1
-      - light.kitchen_fan2
-      - light.kitchen_dry_balcony
+      - input_boolean.kitchen_pop1
+      - input_boolean.kitchen_pop2
+      - input_boolean.kitchen_pop3
+      - input_boolean.kitchen_pop4
+      - input_boolean.kitchen_fan1
+      - input_boolean.kitchen_fan2
       - light.Kitchen_Moodlight
       - input_select.kitchen_moodlight_effect
       - input_slider.kitchen_animation_speed
