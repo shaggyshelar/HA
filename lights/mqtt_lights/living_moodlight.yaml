@@ -1,0 +1,11 @@
+platform: mqtt
+name: "Living Moodlight"
+command_topic: "living/moodlight/setpower"
+state_topic: "living/moodlight/setpowerpub"
+rgb_state_topic: "living/moodlight/setcolorpub"
+rgb_command_topic: "living/moodlight/setcolor"
+brightness_state_topic: "living/moodlight/setbrightnesspub"
+brightness_command_topic: "living/moodlight/setbrightness"
+#color_temp_state_topic: "living/moodlight/setcolortemppub"
+#color_temp_command_topic: "living/moodlight/setcolortemp"
+optimistic: false

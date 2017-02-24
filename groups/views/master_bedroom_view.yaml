@@ -1,0 +1,5 @@
+  master_bedroom_view:
+    name: Master Bedroom
+    view: yes
+    entities:
+      - group.master_bedroom_lights_card

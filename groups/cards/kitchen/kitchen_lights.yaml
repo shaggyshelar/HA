@@ -1,0 +1,11 @@
+  kitchen_lights_card:
+    name: Kitchen
+    entities:
+      - light.kitchen_POP_1
+      - light.kitchen_POP_2
+      - light.kitchen_POP_3
+      - light.kitchen_POP_4
+      - light.kitchen_ledstrip1
+      - light.kitchen_fan1
+      - light.kitchen_fan2
+      - light.kitchen_dry_balcony
