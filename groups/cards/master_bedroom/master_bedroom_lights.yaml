@@ -7,3 +7,6 @@
       - light.master_bedroom_POP_4
       - light.master_bedroom_POP_moodlight
       - light.master_bedroom_TV_backlight
+      - light.Master_Bedroom_Moodlight
+      - input_select.master_bedroom_moodlight_effect
+      - input_slider.master_bedroom_animation_speed

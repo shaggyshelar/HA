@@ -5,6 +5,11 @@
       - light.living_POP_2
       - light.living_POP_3
       - light.living_POP_4
-      - light.living_POP_moodlight
       - light.living_TV_backlight
       - light.living_door_entry
+      - light.Living_Moodlight
+      - input_select.living_moodlight_effect
+      - input_slider.living_animation_speed
+      - light.TV_Backlight
+      - input_select.living_tvbacklight_effect
+      - input_slider.living_tvbacklight_speed

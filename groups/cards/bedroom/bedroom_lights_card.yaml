@@ -5,8 +5,10 @@
       - light.bedroom_POP_2
       - light.bedroom_POP_3
       - light.bedroom_POP_4
-      - light.bedroom_POP_moodlight
       - light.bedroom_TV_backlight
       - light.bedroom_gallary
       - switch.bedroom_fan1
       - switch.bedroom_fan2
+      - light.Bedroom_Moodlight
+      - input_select.bedroom_moodlight_effect
+      - input_slider.bedroom_animation_speed

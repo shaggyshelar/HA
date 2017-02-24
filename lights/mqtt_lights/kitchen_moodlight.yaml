@@ -1,0 +1,11 @@
+platform: mqtt
+name: "Kitchen Moodlight"
+command_topic: "kitchen/moodlight/setpower"
+state_topic: "kitchen/moodlight/setpowerpub"
+rgb_state_topic: "kitchen/moodlight/setcolorpub"
+rgb_command_topic: "kitchen/moodlight/setcolor"
+brightness_state_topic: "kitchen/moodlight/setbrightnesspub"
+brightness_command_topic: "kitchen/moodlight/setbrightness"
+#color_temp_state_topic: "kitchen/moodlight/setcolortemppub"
+#color_temp_command_topic: "kitchen/moodlight/setcolortemp"
+optimistic: false

@@ -1,0 +1,11 @@
+platform: mqtt
+name: "Bedroom Moodlight"
+command_topic: "bedroom/moodlight/setpower"
+state_topic: "bedroom/moodlight/setpowerpub"
+rgb_state_topic: "bedroom/moodlight/setcolorpub"
+rgb_command_topic: "bedroom/moodlight/setcolor"
+brightness_state_topic: "bedroom/moodlight/setbrightnesspub"
+brightness_command_topic: "bedroom/moodlight/setbrightness"
+#color_temp_state_topic: "bedroom/moodlight/setcolortemppub"
+#color_temp_command_topic: "bedroom/moodlight/setcolortemp"
+optimistic: false

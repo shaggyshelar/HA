@@ -1,11 +1,29 @@
-porch_animation_speed:
-  name: Porch Animation Speed
+living_animation_speed:
+  name: Animation Speed
   initial: 150
   min: 1
   max: 150
   step: 10
-jar_animation_speed:
-  name: Jar Animation Speed
+living_tvbacklight_speed:
+  name: Animation Speed
+  initial: 150
+  min: 1
+  max: 150
+  step: 10
+kitchen_animation_speed:
+  name: Kitchen Moodlight Animation Speed
+  initial: 150
+  min: 1
+  max: 150
+  step: 10
+bedroom_animation_speed:
+  name: Animation Speed
+  initial: 150
+  min: 1
+  max: 150
+  step: 10
+master_bedroom_animation_speed:
+  name: Animation Speed
   initial: 150
   min: 1
   max: 150

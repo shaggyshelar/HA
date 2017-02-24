@@ -3,6 +3,5 @@
     view: yes
     entities:
       - group.bedroom_lights_card
-      - group.nightlight_card
       - group.bathroom_lights_card
       - media_player.bedroom_home

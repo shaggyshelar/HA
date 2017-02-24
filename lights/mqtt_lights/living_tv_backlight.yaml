@@ -1,0 +1,11 @@
+platform: mqtt
+name: "TV Backlight"
+command_topic: "living/tvbacklight/setpower"
+state_topic: "living/tvbacklight/setpowerpub"
+rgb_state_topic: "living/tvbacklight/setcolorpub"
+rgb_command_topic: "living/tvbacklight/setcolor"
+brightness_state_topic: "living/tvbacklight/setbrightnesspub"
+brightness_command_topic: "living/tvbacklight/setbrightness"
+#color_temp_state_topic: "living/tvbacklight/setcolortemppub"
+#color_temp_command_topic: "living/tvbacklight/setcolortemp"
+optimistic: false

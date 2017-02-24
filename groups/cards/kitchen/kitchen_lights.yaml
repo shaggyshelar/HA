@@ -9,3 +9,6 @@
       - light.kitchen_fan1
       - light.kitchen_fan2
       - light.kitchen_dry_balcony
+      - light.Kitchen_Moodlight
+      - input_select.kitchen_moodlight_effect
+      - input_slider.kitchen_animation_speed
