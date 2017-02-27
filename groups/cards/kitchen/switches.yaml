@@ -6,3 +6,4 @@
       - input_boolean.kitchen_microwave
       - input_boolean.kitchen_nas_storage
       - input_boolean.kitchen_washing_machine
+      - input_boolean.kitchen_camera

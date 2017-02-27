@@ -181,10 +181,6 @@ bedroom_fan2:
   name: Fan 2
   icon: mdi:fan
   initial: off
-bedroom_camera:
-  name: Camera
-  icon: mdi:camera
-  initial: off
 
 ######## Master Bed Room #######
 master_bedroom_pop1:
