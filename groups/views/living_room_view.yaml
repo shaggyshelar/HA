@@ -3,4 +3,8 @@
     view: yes
     entities: 
       - group.living_room_lights_card
-      - media_player.living_room
+      - group.living_room_moodlight_card
+      - group.living_room_switches_card
+      - group.living_room_fans_card
+      - group.living_room_tvbacklight_card
+      - group.living_room_media_card

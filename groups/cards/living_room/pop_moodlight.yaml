@@ -1,0 +1,6 @@
+  living_room_moodlight_card:
+    name: POP Moodlight
+    entities:
+      - light.Living_Moodlight
+      - input_select.living_moodlight_effect
+      - input_slider.living_animation_speed

@@ -1,0 +1,8 @@
+  living_room_media_card:
+    name: Media
+    entities:
+      - input_boolean.living_tv
+      - input_boolean.living_xbox
+      - input_boolean.living_audioplayer
+      - input_boolean.living_mibox
+      - input_boolean.living_settop_box

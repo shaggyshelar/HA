@@ -1,0 +1,5 @@
+  living_room_fans_card:
+    name: Fans
+    entities:
+      - input_boolean.living_fan1
+      - input_boolean.living_fan2

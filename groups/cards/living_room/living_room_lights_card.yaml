@@ -1,24 +1,7 @@
   living_room_lights_card:
-    name: Living Room
+    name: POP Lights
     entities:
       - input_boolean.living_pop1
       - input_boolean.living_pop2
       - input_boolean.living_pop3
       - input_boolean.living_pop4
-      - input_boolean.living_door_entry
-      - input_boolean.living_fan1
-      - input_boolean.living_fan2
-      - input_boolean.living_tv
-      - input_boolean.living_xbox
-      - input_boolean.living_audioplayer
-      - input_boolean.living_mibox
-      - input_boolean.living_lan_switch
-      - input_boolean.living_settop_box
-      - input_boolean.living_usb_hub
-      - input_boolean.living_hdmi_splitter
-      - light.Living_Moodlight
-      - input_select.living_moodlight_effect
-      - input_slider.living_animation_speed
-      - light.TV_Backlight
-      - input_select.living_tvbacklight_effect
-      - input_slider.living_tvbacklight_speed

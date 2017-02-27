@@ -1,0 +1,11 @@
+  living_room_switches_card:
+    name: Switches
+    entities:
+      - input_boolean.living_door_entry
+      - input_boolean.living_lan_switch
+      - input_boolean.living_usb_hub
+      - input_boolean.living_hdmi_splitter
+      - input_boolean.living_camera
+      - input_boolean.living_ambilight_device
+      - input_boolean.living_optical_selector
+      - input_boolean.living_charging_dock      
