@@ -76,6 +76,14 @@ living_settop_box:
   name: Set Top Box
   icon: mdi:box
   initial: off
+living_usb_hub:
+  name: USB Hub
+  icon: mdi:usb
+  initial: off
+living_hdmi_splitter:
+  name: HDMI Splitter
+  icon: mdi:call-split
+  initial: off
 
 ######## Kitchen #######
 kitchen_pop1:
