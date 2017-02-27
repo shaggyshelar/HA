@@ -4,4 +4,4 @@
     entities:
       - group.bedroom_lights_card
       - group.bathroom_lights_card
-      - media_player.bedroom_home
+      - group.bedroom_fans_card

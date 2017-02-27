@@ -3,3 +3,6 @@
     view: yes
     entities:
       - group.master_bedroom_lights_card
+      - group.master_bedroom_fans_card
+      - group.master_bedroom_media_card
+      - group.master_bedroom_moodlight_card

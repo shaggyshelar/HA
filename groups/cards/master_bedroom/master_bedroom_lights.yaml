@@ -1,13 +1,7 @@
   master_bedroom_lights_card:
-    name: Master Bedroom
+    name: Lights
     entities:
       - input_boolean.master_bedroom_pop1
       - input_boolean.master_bedroom_pop2
       - input_boolean.master_bedroom_pop3
       - input_boolean.master_bedroom_pop4
-      - input_boolean.master_bedroom_fan1
-      - input_boolean.master_bedroom_fan2
-      - input_boolean.master_bedroom_tv
-      - light.Master_Bedroom_Moodlight
-      - input_select.master_bedroom_moodlight_effect
-      - input_slider.master_bedroom_animation_speed

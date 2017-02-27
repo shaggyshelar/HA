@@ -1,0 +1,6 @@
+  kitchen_fans_card:
+    name: Fans
+    entities:
+      - input_boolean.kitchen_fan1
+      - input_boolean.kitchen_fan2
+      - input_boolean.kitchen_chimney

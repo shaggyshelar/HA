@@ -1,0 +1,8 @@
+  kitchen_switches_card:
+    name: Switches
+    entities:
+      - input_boolean.kitchen_fridge
+      - input_boolean.kitchen_router
+      - input_boolean.kitchen_microwave
+      - input_boolean.kitchen_nas_storage
+      - input_boolean.kitchen_washing_machine

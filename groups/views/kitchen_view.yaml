@@ -3,3 +3,6 @@
     view: yes
     entities: 
       - group.kitchen_lights_card
+      - group.kitchen_switches_card
+      - group.kitchen_moodlight_card
+      - group.kitchen_fans_card

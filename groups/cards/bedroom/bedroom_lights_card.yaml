@@ -5,8 +5,3 @@
       - input_boolean.bedroom_pop2
       - input_boolean.bedroom_pop3
       - input_boolean.bedroom_pop4
-      - input_boolean.bedroom_fan1
-      - input_boolean.bedroom_fan2
-      - light.Bedroom_Moodlight
-      - input_select.bedroom_moodlight_effect
-      - input_slider.bedroom_animation_speed

@@ -1,0 +1,6 @@
+  kitchen_moodlight_card:
+    name: Moodlight
+    entities:
+      - light.Kitchen_Moodlight
+      - input_select.kitchen_moodlight_effect
+      - input_slider.kitchen_animation_speed

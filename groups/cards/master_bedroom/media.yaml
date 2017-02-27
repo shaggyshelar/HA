@@ -1,0 +1,6 @@
+  master_bedroom_media_card:
+    name: Media
+    entities:
+      - input_boolean.master_bedroom_tv
+      - input_boolean.master_bedroom_mibox
+      - input_boolean.master_bedroom_camera

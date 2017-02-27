@@ -1,0 +1,6 @@
+  master_bedroom_moodlight_card:
+    name: Moodlight
+    entities:
+      - light.Master_Bedroom_Moodlight
+      - input_select.master_bedroom_moodlight_effect
+      - input_slider.master_bedroom_animation_speed

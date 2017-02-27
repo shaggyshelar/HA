@@ -123,7 +123,7 @@ kitchen_fan1:
   icon: mdi:fan
   initial: off
 kitchen_fan2:
-  name: Fan 2
+  name: Exaust Fan
   icon: mdi:fan
   initial: off
 kitchen_fridge:
@@ -216,4 +216,8 @@ master_bedroom_tv:
 master_bedroom_camera:
   name: Camera
   icon: mdi:camera
+  initial: off
+master_bedroom_mibox:
+  name: Mi Android Box
+  icon: mdi:android
   initial: off

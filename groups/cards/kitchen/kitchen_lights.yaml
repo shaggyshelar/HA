@@ -1,18 +1,7 @@
   kitchen_lights_card:
-    name: Kitchen
+    name: Lights
     entities:
       - input_boolean.kitchen_pop1
       - input_boolean.kitchen_pop2
       - input_boolean.kitchen_pop3
       - input_boolean.kitchen_pop4
-      - input_boolean.kitchen_fan1
-      - input_boolean.kitchen_fan2
-      - input_boolean.kitchen_fridge
-      - input_boolean.kitchen_router
-      - input_boolean.kitchen_microwave
-      - input_boolean.kitchen_nas_storage
-      - input_boolean.kitchen_chimney
-      - input_boolean.kitchen_washing_machine
-      - light.Kitchen_Moodlight
-      - input_select.kitchen_moodlight_effect
-      - input_slider.kitchen_animation_speed
